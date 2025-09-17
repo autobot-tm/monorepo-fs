@@ -1,0 +1,14 @@
+# dependencies
+node_modules
+.pnpm
+.pnp.*
+.pnp.js
+
+# build
+dist
+.next
+out
+
+# env
+.env
+.env.*
