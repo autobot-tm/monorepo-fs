@@ -2,7 +2,14 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
     {
-        ignores: ['dist', 'node_modules'],
+        ignores: [
+            'node_modules',
+            'dist',
+            'coverage',
+            '.turbo',
+            '**/*.config.js',
+            '**/*.config.mjs',
+        ],
     },
     ...tseslint.configs.recommended,
     {
